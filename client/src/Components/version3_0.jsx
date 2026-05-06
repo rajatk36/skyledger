@@ -11,7 +11,7 @@ function uid() { return Date.now().toString(36) + Math.random().toString(36).sli
 function fmt(n) { return Number(n||0).toLocaleString("en-IN"); }
 function calcTotal(f) { return (Number(f.baseFare)||0)+(Number(f.taxes)||0)+(Number(f.agencyFee)||0); }
 function today() { return new Date().toISOString().split("T")[0]; }
-const API_BASE = process.env.API_BASE;
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000/api";
 
 /** Parse "DEL - Delhi" or typed "DEL" / "del" into 3-letter IATA for DB. */
 function airportFieldToIata(val) {
