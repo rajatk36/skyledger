@@ -49,6 +49,17 @@ function normalizeLedger(entry) {
   return { ...entry, id: entry.id || entry._id };
 }
 
+const SEED_PARTIES = [
+ 
+];
+ 
+const SEED_BOOKINGS = [
+ 
+];
+ 
+const SEED_LEDGER = [
+  
+];
 
 const AIRLINES = ["IndiGo","Air India","SpiceJet","Vistara","GoFirst","AirAsia India","Akasa Air","Emirates","Qatar Airways","Singapore Airlines","Lufthansa","British Airways"];
 const STATUS_COLORS = { confirmed:"#22c55e", cancelled:"#ef4444", refunded:"#f59e0b", pending:"#3b82f6" };
