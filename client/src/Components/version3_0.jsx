@@ -2395,7 +2395,7 @@ export default function System({ userId }) {
     <>
       <style>{CSS}</style>
       <nav className="nav">
-        <div className="nav-brand"> <span>{reportHeader.agencyName || "skyledger"}</span></div>
+        <div className="nav-brand"> ✈ <span>skyledger</span></div>
         {[["dashboard","Dashboard"],["bookings","Bookings"],["parties","Parties"]].map(([v,label]) => (
           <button key={v} className={`nav-btn${getNavClass(v)}`} onClick={() => setView(v)}>{label}</button>
         ))}
